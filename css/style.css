@@ -1,0 +1,22 @@
+body {
+  width: 100%;
+  text-align: center;
+  font-family: 'seriHiragino Mincho ProN';
+  margin: 0 auto;
+}
+
+.news {
+  width: 970px;
+}
+
+.cf {
+  display: flex;
+}
+
+.cf li {
+  list-style: none;
+}
+
+.cf li img {
+  width: 310px;
+}
