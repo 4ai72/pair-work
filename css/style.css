@@ -1,3 +1,12 @@
+.swiper-slide:hover {
+  transition-duration: 0.1s;
+  filter: grayscale(30%);
+}
+
+.swiper-slide img {
+  height: 287px;
+}
+
 body {
   background-color: #FFFEEE;
   width: 100%;
