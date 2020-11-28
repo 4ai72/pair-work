@@ -2,20 +2,79 @@ body {
     width: 100%;
     text-align: center;
     font-family: 'seriHiragino Mincho ProN';
-    margin: 0 auto;
 }
-.news {
-    width: 970px;
-}
-.cf {
-    display: flex;
 
-    li {
-        list-style: none;
-
-        img {
-            width:310px;
-        }
+.main_text {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-family: 'Courier';
+    font-size: 18px;
+    p {
+        line-height: 2em;
     }
 }
 
+
+.container {
+    padding: 0;
+    width: 970px;
+    h2 {
+        margin-bottom: 50px;
+        span {
+            border-bottom: 2px double;
+            font-size: 30px;
+            font-family: 'Courier';
+        }
+    }
+
+    &:first-child {
+        margin-top: 100px;
+    }
+}
+
+.cf {
+    display: flex;
+    margin-bottom: 50px;
+    // margin: 0 auto;
+
+    li {
+        list-style: none;
+        margin: 0 auto;
+    }
+}
+.s img {
+    width: 310px;
+    height: 200px;
+    // object-fit: cover;
+}
+.b img {
+    width: 477px;
+    height: 300px;
+    // object-fit: cover;
+
+}
+dt {
+    font-family: 'Courier';
+    font-size: 18px;
+    margin-top: 10px;
+}
+dd {
+    margin-top: 10px;
+}
+.ob {
+    &:hover {
+        transition-duration: 0.3s;
+        transform: scale(1.1);
+        filter: grayscale(100%);
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .s img {
+        width: 477px;
+        height: 300px;
+    }
+    .cf {
+        margin-bottom: 0px;
+    }
+}
