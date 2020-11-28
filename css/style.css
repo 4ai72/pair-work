@@ -1,7 +1,9 @@
 body {
+  background-color: #FFFEEE;
   width: 100%;
   text-align: center;
-  font-family: 'seriHiragino Mincho ProN';
+  font-family: 'Hiragino Mincho ProN','HiraMinProN-W3';
+  color: #002356;
 }
 
 .main_text {
@@ -44,6 +46,18 @@ body {
   margin: 0 auto;
 }
 
+.cf li a {
+  color: #002356;
+}
+
+.cf li a:hover {
+  color: #5c6c7c;
+}
+
+.cf li a img {
+  object-fit: cover;
+}
+
 .s img {
   width: 310px;
   height: 200px;
@@ -65,9 +79,9 @@ dd {
 }
 
 .ob:hover {
-  transition-duration: 0.3s;
+  transition-duration: 0.1s;
   transform: scale(1.1);
-  filter: grayscale(100%);
+  filter: grayscale(70%);
 }
 
 @media screen and (max-width: 690px) {

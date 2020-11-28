@@ -1,7 +1,9 @@
 body {
+    background-color: #FFFEEE;
     width: 100%;
     text-align: center;
-    font-family: 'seriHiragino Mincho ProN';
+    font-family: 'Hiragino Mincho ProN','HiraMinProN-W3';
+    color: #002356;
 }
 
 .main_text {
@@ -40,6 +42,15 @@ body {
     li {
         list-style: none;
         margin: 0 auto;
+        a {
+            color: #002356;
+            &:hover {
+                color: #5c6c7c;
+            }
+            img {
+                object-fit: cover;
+            }
+        }
     }
 }
 .s img {
@@ -63,9 +74,9 @@ dd {
 }
 .ob {
     &:hover {
-        transition-duration: 0.3s;
+        transition-duration: 0.1s;
         transform: scale(1.1);
-        filter: grayscale(100%);
+        filter: grayscale(70%);
     }
 }
 
