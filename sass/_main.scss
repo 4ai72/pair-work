@@ -5,10 +5,15 @@ body {
     font-family: 'Hiragino Mincho ProN','HiraMinProN-W3';
     color: #002356;
 }
+
+.header {
+    margin-bottom: 20px;
+}
+
 .top_bg {
     text-align: left;
     .flower_bg {
-        width: 500px;
+        width: 400px;
     }
 }
 .logo {
@@ -21,18 +26,24 @@ body {
 .under_bg {
     text-align: right;
     img {
-        width: 300px;
+        width: 320px;
+    }
+}
+.nav-item {
+    a {
+        color: #002356;
     }
 }
 
 .swiper-slide {
     &:hover {
     transition-duration: 0.1s;
-    // transform: scale(1.1);
+    transform: scale(1.1);
     filter: grayscale(30%);
     }
     img {
-        height: 287px;
+        width: 100%;
+        height: 250px;
     }
 }
 
@@ -132,6 +143,12 @@ dd {
     .container {
         width: 100%;
     }
+    .swiper-slide {
+        img {
+            width: 100%;
+            height: 500px;
+        }
+    }
     .main_text p {
         padding: 0 30px;
     }
@@ -153,8 +170,20 @@ dd {
 
 /* iphoneX対応 */
 @media screen and (max-width: 480px) {
+    .header {
+        display: none;
+    }
     .logo img {
         width: 300px;
+    }
+    .container {
+        width: 100%;
+    }
+    .swiper-slide {
+        img {
+            width: 100%;
+            height: 230px;
+        }
     }
     .container h2 {
         margin-bottom: 20px;

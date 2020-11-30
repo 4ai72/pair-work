@@ -33,3 +33,25 @@ var swiper = new Swiper('.swiper-container', {
 		disableOnInteraction: true
 	},
   });
+
+
+$('.dropdown-toggle').dropdown();
+
+$(function(){
+    var tscroll = $('#t-scroll');
+    tscroll.hide();
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+            tscroll.fadeIn();
+       } else {
+            tscroll.fadeOut();
+       }
+    });
+    tscroll.click(function () {
+       $('body, html').animate({ scrollTop: 0 }, 500);
+       return false;
+    });
+  });
+  
+
+  
